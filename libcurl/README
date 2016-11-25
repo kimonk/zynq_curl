@@ -1,0 +1,8 @@
+This is the source for the libcurl library that powers the curl app. You can add this 
+to your petalinux project by typing:
+
+petalinux-create -t libs --name libcurl --enable
+
+and then replace the files create in the ./components/libs/libcurl folder with the 
+files found here. You can erase the libcurl.c and libcurl.h created automatically
+by petalinux though it doesn't matter as they'll be ignored be the Makefile. 

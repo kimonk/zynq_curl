@@ -1,0 +1,14 @@
+This directory contains the curl application which should be compiled as an app 
+in the target rootfs of your petalinux project. This app is based on libcurl so 
+it fundamental that libcurl has been added and compiled into the rootfs first.
+Adding the app to your petalinux project is simple enough. Just type:
+
+petalinux-create -t apps --template c --name curl --enable 
+
+anywhere inside an already create petalinux project. This will create a 
+./components/apps/curl project with some template files to get you started. 
+Simply replace those files with the ones in this directory and type:
+
+petalinux-build -c rootfs/curl 
+
+to compile the app. 
